@@ -1,21 +1,21 @@
 package resol.villalval;
 
+import java.util.Scanner;
+
 import resol.villalval.conexion.ConexionBD;
 import resol.villalval.controlador.VentaControlador;
 import resol.villalval.controlador.VideojuegoControlador;
-import resol.villalval.modelo.dao.VentaDAO;
-import resol.villalval.modelo.dao.VideojuegoDAO;
+import resol.villalval.modelo.Venta;
+import resol.villalval.modelo.Videojuego;
 import resol.villalval.vista.Vista;
-
-import java.util.Scanner;
 
 public class Main {
 
     public static void main(String[] args) {
-        // 1. Verificar conexión y crear las tablas (incluye los nuevos campos de stock)
+
         ConexionBD.verificarConexion();
-        VideojuegoDAO.crearTabla();
-        VentaDAO.crearTabla();
+        Videojuego.crearTabla();
+        Venta.crearTabla();
 
         Scanner sc = new Scanner(System.in);
         VideojuegoControlador videojuegoControlador = new VideojuegoControlador();

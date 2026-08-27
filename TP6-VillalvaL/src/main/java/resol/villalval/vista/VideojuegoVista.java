@@ -1,15 +1,11 @@
 package resol.villalval.vista;
 
-import resol.villalval.modelo.Videojuego;
-
 import java.util.List;
 import java.util.Scanner;
 
-/**
- * Vista de Videojuego. Solo pide datos por consola y muestra resultados
- * o mensajes que le indica el Controlador. No aplica ninguna validación
- * ni regla de negocio.
- */
+import resol.villalval.modelo.Videojuego;
+
+
 public class VideojuegoVista {
 
     public Videojuego pedirDatosNuevoVideojuego(Scanner sc) {

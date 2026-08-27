@@ -6,7 +6,7 @@ import java.sql.SQLException;
 
 public class ConexionBD {
 
-    // La base de datos se guarda como archivo local "videojuegos.mv.db"
+
     private static final String URL = "jdbc:h2:./videojuegos";
     private static final String USUARIO = "sa";
     private static final String PASSWORD = "";

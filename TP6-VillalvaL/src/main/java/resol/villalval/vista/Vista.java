@@ -2,10 +2,7 @@ package resol.villalval.vista;
 
 import java.util.Scanner;
 
-/**
- * Vista general del sistema. Solo imprime menús y lee la opción elegida;
- * no contiene lógica de negocio.
- */
+
 public class Vista {
 
     public static int mostrarMenuPrincipal(Scanner sc) {

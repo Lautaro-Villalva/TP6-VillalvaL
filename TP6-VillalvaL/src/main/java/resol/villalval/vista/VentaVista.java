@@ -1,18 +1,14 @@
 package resol.villalval.vista;
 
-import resol.villalval.modelo.Venta;
-import resol.villalval.modelo.VentaDetalle;
-
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 import java.util.List;
 import java.util.Scanner;
 
-/**
- * Vista de Venta. Solo pide datos por consola y muestra resultados
- * o mensajes que le indica el Controlador. No aplica ninguna validación
- * ni regla de negocio (los descuentos y el stock los calcula el Modelo).
- */
+import resol.villalval.modelo.Venta;
+import resol.villalval.modelo.VentaDetalle;
+
+
 public class VentaVista {
 
     private static final DateTimeFormatter FORMATO_FECHA = DateTimeFormatter.ofPattern("dd/MM/yyyy");
@@ -29,7 +25,6 @@ public class VentaVista {
         return leerEntero(sc, "Cantidad vendida: ");
     }
 
-    // Permite dejar en blanco para usar la fecha de hoy, o ingresar dd/MM/yyyy
     public LocalDate pedirFecha(Scanner sc) {
         System.out.print("Fecha de la venta (dd/MM/yyyy, Enter para hoy): ");
         String entrada = sc.nextLine().trim();
